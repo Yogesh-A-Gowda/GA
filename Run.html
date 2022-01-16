@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Student Details</title>
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+  <script src="Run.js"></script>
+</head>
+
+<body>
+	<div id="navigation">
+    <ul class="nav-list">
+        <li id="js-show-all"> <button class="sac" onclick="sa()">Show all Contacts</button></li>
+        <li id="js-search"><button class="hm" onclick="hm()">Home</button></li>
+    </ul>
+</div>
+<div id="bod0" class='bod0' style="visibility: visible;">
+	<div id="search-panel" class="panel">
+    
+    	<h1>Search Contacts</h1>
+    	<div id="search" >
+        	<div id="results">
+          
+      		</div>
+      		<div>
+            	<label>
+                	<input type="text" name="search" id="ser" placeholder="Enter USN" required/>
+	            </label>
+    	    </div>
+            <button onclick="findx()" >Find</button>
+        </div>
+	</div>
+    <div id="contact-panel" class="panel">
+        <div id="contact" >
+            <h1>Add a new contact</h1>
+            <div>
+                <label>
+                    <input type="text" name="person" id="name" placeholder="ex.John Smith" />
+                </label>
+                <label>
+                    <input type="text" name="phone" id="phno" placeholder="1234567" />
+                </label>
+                <label>
+                    <input type="text" name="email" id="email" placeholder="john@example.com" />
+                </label>
+                <label>
+                	<input type="text" name="usn" id="usn"
+placeholder="1DA15IS099"/>
+                </label>
+                <label>
+                    <input type="text" name="address" id="addr" placeholder="country,state,city,pin."/>
+                </label>
+                <label>
+                    <input type="text" name="wc" id="wc" placeholder="ex.TCS"/>
+                </label>    
+            </div>
+            <div>
+                <button onclick="save()">Submit</button>
+            </div>
+            <p id="success"></p>
+          </div>
+    </div>
+	
+</div>
+<div class="bod1" id="bod1" style="visibility: hidden;">
+  <div id = "show-panel" class="panel">
+	</div>
+	
+</div>
+	</body>
+
+
+<style>
+
+body{
+  font-family:sans-serif;
+   background-image: url('https://images.pexels.com/photos/1122865/pexels-photo-1122865.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940');
+   background-position: center;
+   background-size: cover;
+   background-repeat: no-repeat;
+} 
+.bod1{
+  top: 8%;
+  margin-left: 31%;
+  position: absolute;
+}
+h1{
+  font-size:1.2em;
+  text-align:center;
+}
+#show-panel{
+  background-color:#3e75b9;
+  padding:1em;
+  width:92.5%;
+  height: 32.5em;
+  margin:auto;
+  overflow-y:scroll;
+}
+.showal{
+  border: 1px solid #fff;
+  width:92.5%;
+  padding-left: 3%;
+  padding-bottom: 3%;
+  padding-right: 3%;
+  color: #fff;
+}
+.panel{
+  background:#3e75b9;
+  padding:1em;
+  width:92.5%;
+  margin:auto;
+  max-width:30em;
+}
+
+input{
+  width:100%;
+  box-sizing:border-box;
+  font-size:1em;
+  margin-top:0.5em;
+  padding:0.5em;
+}
+
+input:focus{
+  outline:none;
+}
+
+.nav-list{
+  width:92.5%;
+  max-width:11.5em;
+  margin:auto;
+  display: flex;
+  padding-left: 24%;
+  align-items: center;
+  flex-shrink: 0;
+}
+  li{
+  list-style:none;
+  display: block;
+  flex-shrink: 0;
+  background-color: seashell;
+  padding-left: 0%;
+  margin:.5em 0.1em;
+  }
+  li>button{
+    background-color: rgba(256,256,256,0.5);
+  }
+.res{  
+  color: #fff;
+}
+
+#success{
+  color: rgb(224, 14, 14);
+  text-align: center;
+  font-weight: bolder;
+}
+
+</style>
+
+
+
+</html>

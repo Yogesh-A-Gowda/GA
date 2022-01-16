@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.9/angular.min.js"></script>
+    <link rel="stylesheet" href="C:\xampp\htdocs\LP\DWEB\DWEB\dhp.css">
+    
+    <style>
+        
+        body{
+          /* background-image: url('dlogo.png');
+          background-repeat: no-repeat;
+          background-size: 60% 0%;
+          background-position: center;
+        
+           */
+           background-image: linear-gradient(rgb(248, 250, 250),rgb(180, 228, 243));
+        }
+.ise{
+    color: rgb(8, 8, 8);
+    align-items: center;
+    margin-left: 5.5cm;
+    margin-top: 1cm;
+    font-size: 20px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    text-shadow: -6px 10px 9px  rgb(199, 194, 194);
+}
+        
+        input:focus{ background-color:#8d9492;color: beige;
+        font-size: medium;}
+          input:hover{background-color:rgb(96, 104, 74);}
+          input:active{background-color:rgb(32, 210, 241);}
+    </style>
+</head>
+
+<body class="body"> 
+
+
+        <div class="cnl" >
+            <div class="cl">
+                <img src="C:\xampp\htdocs\LP\clogo.jpeg" class="cl">
+                 
+            </div>
+        
+            
+            <div class="cn">
+                <h1>
+                    Dr. Ambedkar   Instute Of Technology
+                    <br/>
+                    <p>Bengaluru,Karnataka</p>
+                </h1>
+    
+               <div class="accr">
+                  <div><b>Accreditations</b></div>
+                  <div>UGC</div>
+                  <div>AICTE</div>
+                  <div>NAAC</div>
+                  <div>NBA</div>
+                  <div>IQAC</div>
+                  <div>TEQIP</div>
+               </div>
+    
+                  
+            </div>
+    
+    
+            <!-- <div class="login"> -->
+                       <!-- <h5 class="pclass">Login</h5> -->
+           <!-- </div> -->
+    
+        </div>
+        
+        
+    
+    
+        <div class="b1g">
+            <div class="ise">
+                <h1 class="ise">
+                    INFORMATION SCIENCE AND ENGINEERING
+                </h1>
+            </div>
+            
+        </div>
+    
+        <div class="navg" id=""> 
+            <a class="active"> HOME</a>
+            
+            <div class="dropdown">
+              <a >ABOUT</a>
+              <div class="dropdown-content">
+                <a href="#">COLLEGE</a>
+                <a href="#">BRANCH</a>
+                <a href="#">FACULTY</a>
+              </div>
+    
+            </div>
+            <div class="dropdown">
+            <a>ACADEMICS</a>
+            <div class="dropdown-content">
+              <a href="#">SYLLABUS</a>
+              <a href="#">TIMETABLE</a>
+            </div>
+          </div>
+    
+            <div class="dropdown">        <a>BRANCH</a>
+            <div class="dropdown-content">
+               <a href="file:///C:/Users/yogesh/Documents/5th%20sem/Web%20Technologies/HTML/HTML&JS/HTML&JS/Run.html">Phone Directory</a>
+               <a href="file:///C:/Users/yogesh/Documents/5th%20sem/Web%20Technologies/1stpg.html">Library</a>
+               <a href="file:///C:/Users/yogesh/Documents/5th%20sem/Web%20Technologies/elective/IDE%20WT/choosing%20ide.html">IDE Reg</a>
+            </div>
+      </div>
+    
+    
+            <a>PLACEMENT</a>
+            
+            <a>CONTACT</a>
+        </div> 
+    
+
+        <div>
+            <div  style= 
+            "color: beige;
+             background-color: rgb(109, 189, 236);
+             width: 7cm;
+             padding: 1cm;
+             margin: 1cm;
+             margin-left: 12cm;
+             border-radius: 9px;
+             font-size: large;
+             box-shadow: -5px 5px 3px 1px rgb(138, 135, 135);
+             "
+            ng-app='' ng-init="f=0">
+               <table border="border">
+                  <caption><h4 style="font-size: 25px;
+                    color: black;
+                    font-family: Verdana, Geneva, Tahoma, sans-serif;"> CGPA Calculator</h4></caption>
+               <tr>
+                <th>
+                   Semester
+                </th>
+                <th>
+                   SGPA
+                </th>
+             </tr>
+             <tr>
+                <td>1st sem</td>
+                <td><input type="number"  ng-model="a"/></td>
+             </tr>
+             <tr>
+               <td>2nd sem</td>
+            
+               <td><input type="number" ng-model="b"/></td>
+            </tr>
+            
+               <td>CGPA</td>
+               <td ng-model="f">{{ ((a+b)/2)}}</td>
+            </tr>
+               </table>
+               </div>
+            </div>
+           
+         
+    
+</body>
+</html>

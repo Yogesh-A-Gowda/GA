@@ -1,0 +1,39 @@
+<style>
+    body{  
+        margin: 0;  
+        padding: 0;
+        font-family: 'Times New Roman';
+    }  
+    img {
+        width: 180px;
+        height: 180px;
+        position: absolute;
+        left:0;
+        top:0;
+    }
+
+    .login{  
+            width: 382px;  
+            overflow: hidden;  
+            margin: 25px;    
+            padding: 25px;
+            background: #23463f;  
+            border-radius: 10px ;  
+            
+    } 
+    h2{  
+        text-align: center;  
+        color: #00008B;  
+        padding: 10px;  
+    }
+    h3{  
+        text-align: center;  
+        color: #FF0000;  
+        padding: 10px;  
+    }    
+    label{  
+        color: #08ffd1;  
+        font-size: 17px;  
+    }  
+    
+</style> 
